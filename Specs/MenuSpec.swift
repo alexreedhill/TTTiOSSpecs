@@ -36,5 +36,16 @@ class Spec : SwiftestSuite {
         var sharedMenu = getSharedInstance()
         expect(uniqueMenu).not().toEqual(sharedMenu)
     }
+
+    
+    it("allows default options to be changed") {
+        let menu = getSharedInstance()
+        menu.character = "O"
+        menu.aiType = "non-minimax"
+        menu.firstPlayer = "ai"
+        expect(menu.character).toEqual("O")
+        expect(menu.aiType).toEqual("non-minimax")
+        expect(menu.firstPlayer).toEqual("ai`")
+    }
   }
 }
