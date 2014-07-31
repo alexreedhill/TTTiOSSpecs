@@ -4,7 +4,7 @@ class Spec : SwiftestSuite {
   let spec = describe("Spec") {
     
     func createUniqueInstance() -> Menu {
-        return Menu(character: "X", aiType: "minimax", firstPlayer: "human")
+        return Menu()
     }
     
     func getSharedInstance() -> Menu {
@@ -45,7 +45,7 @@ class Spec : SwiftestSuite {
         menu.firstPlayer = "ai"
         expect(menu.character).toEqual("O")
         expect(menu.aiType).toEqual("non-minimax")
-        expect(menu.firstPlayer).toEqual("ai`")
+        expect(menu.firstPlayer).toEqual("ai")
     }
   }
 }

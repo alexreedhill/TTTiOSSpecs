@@ -13,12 +13,11 @@ class Menu : Equatable {
     var aiType : String
     var firstPlayer : String
     
-    public init(character : String, aiType : String, firstPlayer : String) {
-        self.character = character
-        self.aiType = aiType
-        self.firstPlayer = firstPlayer
+    public init() {
+        self.character = "X"
+        self.aiType = "minimax"
+        self.firstPlayer = "human"
     }
-
     
     struct Static {
         static var instance: Menu?
@@ -27,7 +26,7 @@ class Menu : Equatable {
     class var sharedInstance: Menu {
     
     if !Static.instance {
-        Static.instance = Menu(character: "X", aiType : "minimax", firstPlayer : "human")
+        Static.instance = Menu()
     }
         return Static.instance!
     }
