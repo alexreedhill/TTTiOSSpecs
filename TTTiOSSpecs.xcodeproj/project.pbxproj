@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		00488C1B198A910F008607FC /* TTTiOSSpecs.h in Headers */ = {isa = PBXBuildFile; fileRef = 00488C1A198A910F008607FC /* TTTiOSSpecs.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00488C21198A910F008607FC /* TTTiOSSpecs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00488C15198A910F008607FC /* TTTiOSSpecs.framework */; };
-		00488C28198A910F008607FC /* TTTiOSSpecsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00488C27198A910F008607FC /* TTTiOSSpecsTests.swift */; };
+		00488C40198A9132008607FC /* Swiftest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00488C3F198A9132008607FC /* Swiftest.framework */; };
+		00488C44198A9132008607FC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00488C43198A9132008607FC /* main.swift */; };
+		00488C49198A9148008607FC /* MenuSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00488C48198A9148008607FC /* MenuSpec.swift */; };
+		00488C4B198A9188008607FC /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00488C4A198A9188008607FC /* Menu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,6 +23,20 @@
 			remoteGlobalIDString = 00488C14198A910F008607FC;
 			remoteInfo = TTTiOSSpecs;
 		};
+		00488C36198A9126008607FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00488C31198A9126008607FC /* Swiftest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 953F36F819758D1700718CF1;
+			remoteInfo = Swiftest;
+		};
+		00488C38198A9126008607FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00488C31198A9126008607FC /* Swiftest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 956FD60619820D5700699AD8;
+			remoteInfo = SwiftestSpecs;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +44,12 @@
 		00488C19198A910F008607FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00488C1A198A910F008607FC /* TTTiOSSpecs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTiOSSpecs.h; sourceTree = "<group>"; };
 		00488C20198A910F008607FC /* TTTiOSSpecsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTTiOSSpecsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		00488C26198A910F008607FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00488C27198A910F008607FC /* TTTiOSSpecsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTiOSSpecsTests.swift; sourceTree = "<group>"; };
+		00488C31198A9126008607FC /* Swiftest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swiftest.xcodeproj; path = Swiftest/src/Swiftest/Swiftest.xcodeproj; sourceTree = "<group>"; };
+		00488C3D198A9132008607FC /* Specs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Specs; sourceTree = BUILT_PRODUCTS_DIR; };
+		00488C3F198A9132008607FC /* Swiftest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swiftest.framework; path = Library/Frameworks/Swiftest.framework; sourceTree = DEVELOPER_DIR; };
+		00488C43198A9132008607FC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		00488C48198A9148008607FC /* MenuSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuSpec.swift; sourceTree = "<group>"; };
+		00488C4A198A9188008607FC /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,14 +68,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		00488C3B198A9132008607FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00488C40198A9132008607FC /* Swiftest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		00488C0B198A910F008607FC = {
 			isa = PBXGroup;
 			children = (
+				00488C31198A9126008607FC /* Swiftest.xcodeproj */,
 				00488C17198A910F008607FC /* TTTiOSSpecs */,
-				00488C24198A910F008607FC /* TTTiOSSpecsTests */,
+				00488C41198A9132008607FC /* Specs */,
+				00488C3E198A9132008607FC /* Frameworks */,
 				00488C16198A910F008607FC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +95,7 @@
 			children = (
 				00488C15198A910F008607FC /* TTTiOSSpecs.framework */,
 				00488C20198A910F008607FC /* TTTiOSSpecsTests.xctest */,
+				00488C3D198A9132008607FC /* Specs */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,21 +117,39 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		00488C24198A910F008607FC /* TTTiOSSpecsTests */ = {
+		00488C32198A9126008607FC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				00488C27198A910F008607FC /* TTTiOSSpecsTests.swift */,
-				00488C25198A910F008607FC /* Supporting Files */,
+				00488C37198A9126008607FC /* Swiftest.framework */,
+				00488C39198A9126008607FC /* SwiftestSpecs */,
 			);
-			path = TTTiOSSpecsTests;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		00488C25198A910F008607FC /* Supporting Files */ = {
+		00488C3E198A9132008607FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				00488C26198A910F008607FC /* Info.plist */,
+				00488C3F198A9132008607FC /* Swiftest.framework */,
 			);
-			name = "Supporting Files";
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		00488C41198A9132008607FC /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				00488C42198A9132008607FC /* Support */,
+				00488C48198A9148008607FC /* MenuSpec.swift */,
+				00488C4A198A9188008607FC /* Menu.swift */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		00488C42198A9132008607FC /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				00488C43198A9132008607FC /* main.swift */,
+			);
+			name = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +202,22 @@
 			productReference = 00488C20198A910F008607FC /* TTTiOSSpecsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		00488C3C198A9132008607FC /* Specs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00488C45198A9132008607FC /* Build configuration list for PBXNativeTarget "Specs" */;
+			buildPhases = (
+				00488C3A198A9132008607FC /* Sources */,
+				00488C3B198A9132008607FC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Specs;
+			productName = Specs;
+			productReference = 00488C3D198A9132008607FC /* Specs */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,6 +234,9 @@
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = 00488C14198A910F008607FC;
 					};
+					00488C3C198A9132008607FC = {
+						CreatedOnToolsVersion = 6.0;
+					};
 				};
 			};
 			buildConfigurationList = 00488C0F198A910F008607FC /* Build configuration list for PBXProject "TTTiOSSpecs" */;
@@ -180,13 +249,37 @@
 			mainGroup = 00488C0B198A910F008607FC;
 			productRefGroup = 00488C16198A910F008607FC /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 00488C32198A9126008607FC /* Products */;
+					ProjectRef = 00488C31198A9126008607FC /* Swiftest.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				00488C14198A910F008607FC /* TTTiOSSpecs */,
 				00488C1F198A910F008607FC /* TTTiOSSpecsTests */,
+				00488C3C198A9132008607FC /* Specs */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		00488C37198A9126008607FC /* Swiftest.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Swiftest.framework;
+			remoteRef = 00488C36198A9126008607FC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00488C39198A9126008607FC /* SwiftestSpecs */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = SwiftestSpecs;
+			remoteRef = 00488C38198A9126008607FC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		00488C13198A910F008607FC /* Resources */ = {
@@ -217,7 +310,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00488C28198A910F008607FC /* TTTiOSSpecsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00488C3A198A9132008607FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00488C4B198A9188008607FC /* Menu.swift in Sources */,
+				00488C49198A9148008607FC /* MenuSpec.swift in Sources */,
+				00488C44198A9132008607FC /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +481,32 @@
 			};
 			name = Release;
 		};
+		00488C46198A9132008607FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		00488C47198A9132008607FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -398,6 +526,7 @@
 				00488C2D198A910F008607FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00488C2E198A910F008607FC /* Build configuration list for PBXNativeTarget "TTTiOSSpecsTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +535,16 @@
 				00488C30198A910F008607FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00488C45198A9132008607FC /* Build configuration list for PBXNativeTarget "Specs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00488C46198A9132008607FC /* Debug */,
+				00488C47198A9132008607FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
